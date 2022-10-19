@@ -1,0 +1,33 @@
+CREATE TABLE dogs (ID INTEGER PRIMARY KEY, item TEXT, price INTEGER);
+
+INSERT INTO dogs VALUES (1, "leash", 20);
+INSERT INTO dogs VALUES (2, "food", 100);
+INSERT INTO dogs VALUES (3, "collar", 15);
+INSERT INTO dogs VALUES (4, "crate", 150);
+INSERT INTO dogs VALUES (5, "toys", 10);
+INSERT INTO dogs VALUES (6, "training", 1000);
+INSERT INTO dogs VALUES (7, "slip leash", 20);
+INSERT INTO dogs VALUES (8, "bed", 50);
+INSERT INTO dogs VALUES (9, "treats", 25);
+INSERT INTO dogs VALUES (10, "love", 1);
+INSERT INTO dogs VALUES (11, "home", 250);
+INSERT INTO dogs VALUES (12, "backyard", 500);
+INSERT INTO dogs VALUES (13, "friends", 5);
+INSERT INTO dogs VALUES (14, "ecollar", 175);
+INSERT INTO dogs VALUES (15, "handler", 2);
+
+SELECT * FROM dogs;
+
+SELECT sum(price) FROM dogs;
+
+SELECT price FROM dogs
+WHERE price >= 200;
+
+SELECT * FROM dogs
+ORDER BY price;
+
+SELECT price FROM dogs
+WHERE price < 250 AND price > 1;
+
+
+
